@@ -1,18 +1,11 @@
 # Captcha Solver
 
-A simple captcha solver page that displays an image and allows entering and submitting an answer.
+A simple captcha solver that handles SVG captcha images and includes a retry button.
 
 ## Usage
 
-1. Open the page in a browser.
-2. The captcha image will be displayed.
-3. Enter your answer in the text field.
-4. Click the Submit button to check your answer.
-
-## Dependencies
-
-* None (static HTML and JavaScript)
-
-## Notes
-
-* The captcha image is displayed using the URL query parameter '?url='. If no URL is provided, the sample image 'sample.png' is used.
+1. Open `index.html` in a web browser.
+2. If a captcha image is provided via the `?url=` query parameter, it will be displayed. Otherwise, a sample captcha image will be used.
+3. Click the `Solve` button to attempt to solve the captcha.
+4. If the captcha is solved successfully, the result will be displayed in an alert box.
+5. If the captcha cannot be solved, you can click the `Retry` button to try again.
