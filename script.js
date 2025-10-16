@@ -1,0 +1,1 @@
+class CaptchaSolver {constructor(svg) {this.svg = svg;}solve() {const svg = this.svg;const regex = /<text x='(.*?)' y='(.*?)' font-size='(.*?)'>(.*?)</text>/g;let match;let result = '';while ((match = regex.exec(svg)) !== null) {result += match[4];}return Promise.resolve(result);}}
